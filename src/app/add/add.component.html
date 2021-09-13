@@ -1,0 +1,37 @@
+<!-- <form>
+    <div>
+      <label for="firstname" class="form-label">Item Name</label>
+      <input type="text" class="form-control" id="firstname" (input)="onFirstNameInput($event)">
+    </div>
+    <div>
+      <label for="lastname" class="form-label">Item Description</label>
+      <input type="text" class="form-control" id="lastname" (input)="onLastNameInput($event)">
+    </div>
+    <div>
+        <label for="itemprice" class="form-label">Item Price</label>
+        <input type="text" class="form-control" id="itemprice" (input)="onItemPriceInput($event)">
+    </div>
+    <div>
+      <label class="form-label">Item Image Link</label>
+      <input type="text" class="form-control" (input)="onImageLinkInput($event)">
+    </div>
+
+    <app-form (addItem)=""></app-form>
+    <button class="btn btn-primary" (click)=onAddItem(event)>Add to catalog</button>
+  </form>
+  
+  <h1>Output (Using String Interpolation):</h1>
+  <div>
+    <h2>Item Name Output: {{ itemName }}</h2>
+    <h2>Item Description Output: {{ itemDesc }}</h2>
+    <h2>Item Price Output: {{ itemPrice }}</h2>
+  </div>
+  
+  <h1>Output (Using property binding):</h1>
+  <div>
+    <h2>Item Image Output:</h2>
+    <img [src]="imageLink">
+  </div> -->
+<div class="container-fluid">
+  <app-form (addItem)="onAddItem($event)"></app-form>
+</div>

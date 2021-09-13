@@ -1,0 +1,15 @@
+<div>
+    <label class="form-label">Item Name</label>
+    <input [(ngModel)]="itemNameInputValue" class="form-control" type="text"/>
+</div>
+<div>
+    <label class="form-label">Item Description</label>
+    <input [(ngModel)]="itemDescInputValue" class="form-control" type="text"/>
+</div>
+<div>
+    <label class="form-label">Item Price</label>
+    <input [(ngModel)]="itemPriceInputValue" class="form-control" type="text"/>
+</div>
+<div>
+    <button (click)="addItem()" class="btn btn-success mt-2">Add Item</button>
+</div>
